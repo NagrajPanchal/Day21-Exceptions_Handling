@@ -1,11 +1,10 @@
-public class MoodAnalyser {
-    public String analyseMood(String message) {
-
-        if (message.contains("Sad")) {
+public class MoodAnalyser
+{
+    public String analyseMood(String message)
+    {
+        if (message.contains("Sad"))
             return "Sad";
-
-        } else
+        else
             return "Happy";
-
     }
 }
