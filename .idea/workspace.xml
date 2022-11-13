@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f967c94-0e3b-4d14-a085-9c105056405b" name="Changes" comment="Added : analyse and respond Happy or Sad Mood">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/bridgelabz/MoodAnalyserTest.java" afterDir="false" />
+    <list default="true" id="3f967c94-0e3b-4d14-a085-9c105056405b" name="Changes" comment="Refactor : The code to take the mood message in Constructor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MoodAnalyser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/MoodAnalyser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MoodAnalyserTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelabz/MoodAnalyser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/MoodAnalyser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="UC1-AnalyseMood_Happy_or_Sad" />
+        <entry key="$PROJECT_DIR$" value="Refactor_UC1_Mood_Message_in_Constructor" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -46,6 +44,11 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.bridgelabz" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="MoodAnalyserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Day21-Mood_Analyzer_Exceptions" />
@@ -85,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668141277014</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Refactor : The code to take the mood message in Constructor">
+      <created>1668321739531</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668321739531</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -101,6 +111,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added : analyse and respond Happy or Sad Mood" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added : analyse and respond Happy or Sad Mood" />
+    <MESSAGE value="Refactor : The code to take the mood message in Constructor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor : The code to take the mood message in Constructor" />
   </component>
 </project>
