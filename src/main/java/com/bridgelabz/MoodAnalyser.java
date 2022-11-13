@@ -1,4 +1,4 @@
-// UC3-NULL or Empty Mood throw Custom Exception MoodAnalysisException
+// UC3.1-NULL Mood throw Custom Exception MoodAnalysisException
 
 package com.bridgelabz;
 public class MoodAnalyser
