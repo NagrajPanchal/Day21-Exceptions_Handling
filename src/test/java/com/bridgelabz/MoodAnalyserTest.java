@@ -1,4 +1,4 @@
-// Refactor the code to take the mood message in Constructor
+// UC2 : Handle Exception if User Provides Invalid Mood
 
 package com.bridgelabz;
 

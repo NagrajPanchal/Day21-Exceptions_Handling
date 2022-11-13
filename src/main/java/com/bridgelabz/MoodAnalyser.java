@@ -1,27 +1,28 @@
-// Refactor the code to take the mood message in Constructor
+// UC2 : Handle Exception if User Provides Invalid Mood
 
 package com.bridgelabz;
-public class MoodAnalyser {
-
-
-    private final String message;
-
-    /*
-    taking MoodAnalyser input using MoodAnalyser Constructor
-     */
-    public MoodAnalyser(String Message) {
+public class MoodAnalyser
+{
+    private String message;
+    // taking MoodAnalyser input using MoodAnalyser Constructor
+    public MoodAnalyser(String Message)
+    {
         this.message = Message;
     }
+    public String analyseMood()
+    {
+        /*
+        if there is nothing or null in message it should give happy but it shows nullPointer Exception
+         So we use try and catch for exception handling. if it is null then it gives happy using catch block
+         */
+        try {
+            if (message.contains(null))
+                return "Sad";
+            else
+                return "Happy";
 
-    public String analyseMood() {
-
-        if (message.contains("I am in sad mood")) {
-            return "Sad";
-
-        } else
+        } catch (NullPointerException e) {
             return "Happy";
-
+        }
     }
-
-
 }
