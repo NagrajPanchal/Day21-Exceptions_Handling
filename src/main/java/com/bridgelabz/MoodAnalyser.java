@@ -1,9 +1,9 @@
-// UC3-NULL or Empty Mood throw Custom Exception MoodAnalysisException
+// UC3.2-NULL and Empty Mood throw Custom Exception MoodAnalysisException
 
 package com.bridgelabz;
 public class MoodAnalyser
 {
-    private String message;
+    private final String message;
     public MoodAnalyser(String Message)
     {
         this.message = Message;
@@ -11,19 +11,21 @@ public class MoodAnalyser
     public String analyseMood(String message) throws MoodAnalysesException
     {
         /*
-        if there is nothing or null in message it should give happy but it throws nullPointer Exception
-         So we use try and catch for exception handling.
+        if there is nothing or empty in message it should throw empty, but if it is null it throws
+        nullPointer Exception So we use try and catch for exception handling.
          */
         try
         {
-            if (message.contains(null))
+            if (message.equals(""))
+                throw new MoodAnalysesException(MoodAnalysesException.ExceptionType.ENTERED_EMPTY, "Please enter proper message");
+            else if (message.contains(null))
                 return "Sad";
             else
                 return "Happy";
         }
         catch (NullPointerException e)
         {
-            throw new MoodAnalysesException("Please enter proper message");
+            throw new MoodAnalysesException(MoodAnalysesException.ExceptionType.ENTERED_NULL, "Please enter proper message");
         }
     }
 }
