@@ -1,4 +1,4 @@
-// UC3.1-NULL Mood throw Custom Exception MoodAnalysisException
+// UC3.2-NULL and Empty Mood throw Custom Exception MoodAnalysisException
 
 package com.bridgelabz;
 
@@ -10,14 +10,27 @@ public class MoodAnalyserTest
     @Test
     public void givenNullMood_ShouldThrowException()
     {
-        MoodAnalyser moodAnalyser = new MoodAnalyser(null);
+    MoodAnalyser moodAnalyser = new MoodAnalyser(null);
+    try
+    {
+        moodAnalyser.analyseMood(null);
+    }
+    catch (MoodAnalysesException e)
+    {
+        Assertions.assertEquals(MoodAnalysesException.ExceptionType.ENTERED_NULL, e.type);
+    }
+}
+    @Test
+    public void givenEmptyMood_ShouldThrowException()
+    {
+        MoodAnalyser moodAnalyser = new MoodAnalyser("");
         try
         {
-            moodAnalyser.analyseMood(null);
+            moodAnalyser.analyseMood("");
         }
         catch (MoodAnalysesException e)
         {
-            Assertions.assertEquals("Please enter proper message", e.getMessage());
+            Assertions.assertEquals(MoodAnalysesException.ExceptionType.ENTERED_EMPTY, e.type);
         }
     }
 }
